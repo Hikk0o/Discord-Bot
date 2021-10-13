@@ -17,7 +17,7 @@ def main():
     async def on_member_join(member):
         # print(member.guild.id)
         if member.guild.id == 840320349890805760:
-            guild = Bot.get_guild(840320349890805760)  # получаем объект сервера*
+            guild = Bot.get_guild(840320349890805760)
             role = guild.get_role(841470996988821534)
             await member.add_roles(role)
             channel = Bot.get_channel(841459824054370334)
